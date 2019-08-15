@@ -37,7 +37,7 @@ def f(s, pool,A,B,C,X):
     with s:
         name = threading.currentThread().getName()
         pool.makeActive(name)
-        time.sleep(0.5)
+        #time.sleep(0.5)
         CheckSim(A,B,C,X)
         pool.makeInactive(name)
 
@@ -47,7 +47,7 @@ def f2(s, pool,File):
     with s:
         name = threading.currentThread().getName()
         pool.makeActive(name)
-        time.sleep(0.5)
+        #time.sleep(0.5)
         VerifyDirsNnums2(File)
         pool.makeInactive(name)
 
