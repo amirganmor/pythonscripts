@@ -18,5 +18,5 @@ s3 = boto3.resource(
 )
 
 # Image Uploaded
-s3.Bucket(BUCKET_NAME).put_object(Key=FILE_NAME, Body=data, ACL='public-read')
+s3.Bucket(BUCKET_NAME).put_object(Key="fold/" +FILE_NAME, Body=data, ACL='public-read')
 print ("Done")
